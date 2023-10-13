@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "scss": "^0.2.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "live-server": "^1.2.2",
+    "node-sass": "^9.0.0"
+  },
+  "scripts": {
+    "build:scss": "node-sass src/styles/styles.scss src/styles/styles.css",
+    "server": "live-server"
+  }
+}

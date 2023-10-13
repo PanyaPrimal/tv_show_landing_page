@@ -1,0 +1,13 @@
+@import "./utils/normalize";
+@import "./utils/mixins";
+@import "./utils/vars";
+
+
+* {
+  margin: 0;
+}
+
+body {
+  @include flex(flex-end, space-between);
+  background: #675959;
+}
