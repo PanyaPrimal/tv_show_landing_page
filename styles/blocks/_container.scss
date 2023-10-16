@@ -1,0 +1,12 @@
+.container {
+  margin: 0 auto;
+  max-width: 360px;
+
+  @include onTablet {
+    max-width: 768px;
+  }
+
+  @include onDesktop {
+    max-width: 1440px;
+  }
+}

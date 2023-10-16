@@ -1,0 +1,12 @@
+.page {
+scroll-behavior: smooth;
+background-color: black;
+
+  @include onTablet {
+    
+  }
+
+  @include onDesktop {
+
+  }
+}
