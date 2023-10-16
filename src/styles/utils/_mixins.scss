@@ -3,7 +3,7 @@
   height: $size;
 }
 
-@mixin flex-centred () {
+@mixin flex-centred() {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -24,12 +24,5 @@
 @mixin onDesktop {
   @media (min-width: 1440px) {
     @content;
-  }
-}
-
-@mixin hover($_property, $_toValue, $type) {
-  transition: #{$_property} 0.3s, $type;
-  &:hover {
-    #{$_property}: $_toValue;
   }
 }

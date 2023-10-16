@@ -2,12 +2,7 @@
 @import "./utils/mixins";
 @import "./utils/vars";
 
+@import "./blocks/container";
+@import "./blocks/page";
+@import "./blocks/header";
 
-* {
-  margin: 0;
-}
-
-body {
-  @include flex(flex-end, space-between);
-  background: #675959;
-}
