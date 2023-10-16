@@ -3,16 +3,6 @@
   @include flex-centred;
   width: 100%;
   padding: 0 5px 0 5px;
-
-  svg.icon {
-    @include square(22px);
-  }
-
-  @include onTablet {
-  }
-
-  @include onDesktop {
-  }
 }
 
 .nav {
@@ -54,10 +44,11 @@
 
       position: relative;
 
+      $border: 3px;
       color: #FFF;
       background: #000;
       background-clip: padding-box;
-      border: solid 3px transparent;
+      border: solid $border transparent;
       border-radius: 12px;
       text-align: center;
       font-family: 'Lemon', serif;
@@ -226,6 +217,9 @@
       @include onDesktop {
         padding: 38px 26px;
       }
+    }
+    .icon {
+      @include square(24px);
     }
   }
 }

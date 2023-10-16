@@ -60,10 +60,7 @@ button {
   width: 100%;
   padding: 0 5px 0 5px;
 }
-.header svg.icon {
-  width: 22px;
-  height: 22px;
-}
+
 .nav {
   display: flex;
   align-items: center;
@@ -132,6 +129,7 @@ button {
     margin-right: 14px;
     font-size: 40px;
     border-radius: 14px;
+    border: solid 4px transparent;
   }
 }
 .nav .logo-m:before {
@@ -142,7 +140,7 @@ button {
   bottom: 0;
   left: 0;
   z-index: -1;
-  margin: -4px;
+  margin: -3px;
   border-radius: inherit;
   background: linear-gradient(to right, #326CFF, #26FFF2);
 }
@@ -288,6 +286,7 @@ button {
   justify-content: space-between;
   flex-direction: column;
   cursor: pointer;
+  transition: transform 0.3s ease-in-out;
 }
 .nav__action :hover {
   opacity: 0.8;
@@ -305,4 +304,17 @@ button {
   .nav__action-link {
     padding: 38px 26px;
   }
+}
+.nav__action .icon {
+  width: 24px;
+  height: 24px;
+}
+
+.hero__headline {
+  color: #FFF;
+  font-family: "Marcellus", serif;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 70px;
 }/*# sourceMappingURL=styles.css.map */

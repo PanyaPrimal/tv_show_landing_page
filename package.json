@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "gh-pages": "^6.0.0",
     "scss": "^0.2.4"
   },
   "devDependencies": {
@@ -9,6 +10,8 @@
   },
   "scripts": {
     "build:scss": "node-sass src/styles/styles.scss src/styles/styles.css",
-    "server": "live-server"
-  }
+    "server": "live-server",
+    "publish": "gh-pages -d src"
+  },
+  "homepage": "https://PanyaPrimal.github.io/tv_show_landing_page"
 }
