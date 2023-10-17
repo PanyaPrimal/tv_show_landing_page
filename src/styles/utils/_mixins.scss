@@ -15,6 +15,12 @@
   justify-content: $justify;
 }
 
+@mixin onMobile {
+  @media (min-width: 360px) {
+    @content;
+  }
+}
+
 @mixin onTablet {
   @media (min-width: 768px) {
     @content;

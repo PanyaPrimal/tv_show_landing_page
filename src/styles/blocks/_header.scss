@@ -40,11 +40,9 @@
     
     &-m {
       @include square(50px);
-      margin-right: 10px;
-
-      position: relative;
-
       $border: 3px;
+      margin-right: 10px;
+      position: relative;
       color: #FFF;
       background: #000;
       background-clip: padding-box;
@@ -53,7 +51,6 @@
       text-align: center;
       font-family: 'Lemon', serif;
       font-size: 30px;
-      font-style: normal;
       font-weight: 400;
 
       @include onDesktop {
@@ -67,7 +64,10 @@
       &:before {
         content: '';
         position: absolute;
-        top: 0; right: 0; bottom: 0; left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
         z-index: -1;
         margin: -$border;
         border-radius: inherit;
@@ -104,7 +104,7 @@
 
   &__link {
     @include flex-centred;
-    padding: 6px 16px;
+    padding: 2px 14px;
     flex-wrap: nowrap;
     text-align: center;
     font-family: 'Mulish', serif;
@@ -183,7 +183,7 @@
   &__actions {
     @include flex(center, space-between);
     flex-direction: column;
-    width: 115px;
+    width: 76px;
     
     @include onTablet {
       @include flex-centred;
@@ -208,7 +208,7 @@
     }
 
     &-link {
-      padding: 5px 40px;
+      padding: 0px 30px;
 
       @include onTablet {
         padding: 26px 20px;
