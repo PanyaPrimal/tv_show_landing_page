@@ -9,173 +9,295 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lemon&family=Marcellus&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
 </head>
-<body class="page">
-  <header class="header container">
-    <nav class="header__navigation nav">
-      <a href="#" class="logo" aria-label="Logo go home">
-        <div class="logo-m">
-          </span>M</span>
-        </div>
-        <span class="logo-box">box</span>
-      </a>
-  
-      <ul class="nav__links">
-        <li class="nav__item" aria-label="Go to Home page">
-          <a class="nav__link nav__link-active" href="#">
-            Home
-          </a>
-        </li>
-        <li class="nav__item" aria-label="Go to TV Shows page">
-          <a class="nav__link" href="#">
-            TV Shows
-          </a>
-        </li>
-        <li class="nav__item" aria-label="Go to TV Movies page">
-          <a class="nav__link" href="#">
-            Movies
-          </a>
-        </li>
-        <li class="nav__item" aria-label="Go to Series page">
-          <a class="nav__link" href="#">
-            Series
-          </a>
-        </li>
-      </ul>
+  <body class="page">
+    <header class="header container">
+      <nav class="header__navigation nav">
+        <a href="#" class="logo" aria-label="Logo go home">
+          <div class="logo-m">
+            </span>M</span>
+          </div>
+          <span class="logo-box">box</span>
+        </a>
     
-      <ul class="nav__actions actions">
-        <li class="nav__action actions__search">
-          <a class="nav__action-link" aria-label="Search">
-            <svg class="icon">
-                <use xlink:href="./images/sprite-icons.svg#search"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="nav__action actions__notifications">
-          <a class="nav__action-link" aria-label="Go to notifications">
-            <svg class="icon">
-              <use xlink:href="./images/sprite-icons.svg#notifications"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="nav__action actions__add">
-          <a class="nav__action-link" aria-label="Add TV Show to profile">
-            <svg class="icon">
-              <use xlink:href="./images/sprite-icons.svg#add"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+        <ul class="nav__links">
+          <li class="nav__item" aria-label="Go to Home page">
+            <a class="nav__link nav__link-active" href="#">
+              Home
+            </a>
+          </li>
+          <li class="nav__item" aria-label="Go to TV Shows page">
+            <a class="nav__link" href="#">
+              TV Shows
+            </a>
+          </li>
+          <li class="nav__item" aria-label="Go to TV Movies page">
+            <a class="nav__link" href="#">
+              Movies
+            </a>
+          </li>
+          <li class="nav__item" aria-label="Go to Series page">
+            <a class="nav__link" href="#">
+              Series
+            </a>
+          </li>
+        </ul>
+      
+        <ul class="nav__actions actions">
+          <li class="nav__action actions__search">
+            <a class="nav__action-link" aria-label="Search">
+              <svg class="icon">
+                  <use xlink:href="./images/sprite-icons.svg#search"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="nav__action actions__notifications">
+            <a class="nav__action-link" aria-label="Go to notifications">
+              <svg class="icon">
+                <use xlink:href="./images/sprite-icons.svg#notifications"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="nav__action actions__add">
+            <a class="nav__action-link" aria-label="Add TV Show to profile">
+              <svg class="icon">
+                <use xlink:href="./images/sprite-icons.svg#add"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <main class="main container">
-    <section class="section__hero hero">
-      <aside class="hero__content">
-        <h1 class="hero__headline">Zack Snyder's Justice League</h1>
-        <div class="hero__details">
-          <span class="hero__year">2021</span>
-          <div class="hero__age-category">
-            <span>18+</span>
+    <main class="main container container">
+      <section class="hero">
+        <aside class="hero__content">
+          <h1 class="hero__headline">Zack Snyder's Justice League</h1>
+          <div class="hero__details">
+            <span class="hero__year">2021</span>
+            <div class="hero__age-category">
+              <span>18+</span>
+            </div>
+            <span class="hero__duration">4h 2min</span>
+            <span class="hero__mark">
+              8.8
+              <svg class="hero__star">
+                <use xlink:href="./images/sprite-icons.svg#star"></use>
+              </svg>
+            </span>
+
           </div>
-          <span class="hero__duration">4h 2min</span>
-          <span class="hero__mark">
-            8.8
-            <svg class="hero__star">
-              <use xlink:href="./images/sprite-icons.svg#star"></use>
-            </svg>
-          </span>
-
-        </div>
-        <summary class="hero__summary">
-          Determined to ensure Superman's ultimate sacrifice was not in vain, Bruce Wayne aligns forces with Diana Prince with plans to recruit a team of metahumans to protect the world from an approaching threat of catastrophic proportions.
-        </summary>
-        <div class="hero__buttons">
-          <a href="#" class="hero__button-watch button button-gradient">
-            <svg class="icon">
-              <use xlink:href="./images/sprite-icons.svg#play"></use>
-            </svg>
-            <span>Watch</span>
-          </a>
-          <a href="#" class="hero__button-more button">
-            More information
-          </a>
-        </div>
-      </aside>
-
-      <aside class="hero__bg-poster"></aside>
-
-      <div class="hero__underline"></div>
-    </section>
-
-    <div class="trending container">
-      <section class="trending__show">
-        <div class="main__headline main__headline--trending">
-          <div class="main__headline-gradient"></div>
-          <h3 class="main__headline-text">
-            Trending TV Shows
-          </h3>
-          <span  class="main__headline-arrow">&#x1F896;</span>
-        </div>
-
-        <div class="slider">
-          <div class="slider__container">
-            <a href="#" class="slider__item" style="background-image: url('./images/tv-shows/1.png');"></a>
-            <a href="#" class="slider__item" style="background-image: url('./images/tv-shows/2.png');"></a>
-            <a href="#" class="slider__item" style="background-image: url('./images/tv-shows/3.png');"></a>
-            <a href="#" class="slider__item" style="background-image: url('./images/tv-shows/4.png');"></a>
-            <a href="#" class="slider__item" style="background-image: url('./images/tv-shows/5.png');"></a>
-            <a href="#" class="slider__item" style="background-image: url('./images/tv-shows/6.png');"></a>
+          <summary class="hero__summary">
+            Determined to ensure Superman's ultimate sacrifice was not in vain, Bruce Wayne aligns forces with Diana Prince with plans to recruit a team of metahumans to protect the world from an approaching threat of catastrophic proportions.
+          </summary>
+          <div class="hero__buttons">
+            <a href="#" class="hero__button-watch button button-gradient">
+              <svg class="icon">
+                <use xlink:href="./images/sprite-icons.svg#play"></use>
+              </svg>
+              <span>Watch</span>
+            </a>
+            <a href="#" class="hero__button-more button">
+              More information
+            </a>
           </div>
-        </div>
+        </aside>
+
+        <aside class="hero__bg-poster"></aside>
+
+        <div class="hero__underline"></div>
       </section>
 
-      <section class="trending__movies">
-        <div class="main__headline main__headline--trending">
-          <div class="main__headline-gradient"></div>
-          <h3 class="main__headline-text">
-            Trending Movies
-          </h3>
-          <span  class="main__headline-arrow">&#x1F896;</span>
-        </div>
-
-        <div class="slider">
-          <div class="slider__container">
-            <a href="#" class="slider__item" style="background-image: url('./images/movies/7.png');"></a>
-            <a href="#" class="slider__item" style="background-image: url('./images/movies/8.png');"></a>
-            <a href="#" class="slider__item" style="background-image: url('./images/movies/9.png');"></a>
-            <a href="#" class="slider__item" style="background-image: url('./images/movies/10.png');"></a>
-            <a href="#" class="slider__item" style="background-image: url('./images/movies/11.png');"></a>
-            <a href="#" class="slider__item" style="background-image: url('./images/movies/12.png');"></a>
+      <div class="trending container">
+        <section class="trending__show">
+          <div class="main__headline main__headline--trending">
+            <div class="main__headline-gradient"></div>
+            <h3 class="main__headline-text">
+              Trending TV Shows
+            </h3>
+            <span  class="main__headline-arrow">&#x1F896;</span>
           </div>
-        </div>
+
+          <div class="slider">
+            <div class="slider__container slider__container--shows">
+              <a href="#" class="slider__item" style="background-image: url('./images/tv-shows/1.png');"></a>
+              <a href="#" class="slider__item" style="background-image: url('./images/tv-shows/2.png');"></a>
+              <a href="#" class="slider__item" style="background-image: url('./images/tv-shows/3.png');"></a>
+              <a href="#" class="slider__item" style="background-image: url('./images/tv-shows/4.png');"></a>
+              <a href="#" class="slider__item" style="background-image: url('./images/tv-shows/5.png');"></a>
+              <a href="#" class="slider__item" style="background-image: url('./images/tv-shows/6.png');"></a>
+            </div>
+          </div>
+        </section>
+
+        <section class="trending__movies">
+          <div class="main__headline main__headline--trending">
+            <div class="main__headline-gradient"></div>
+            <h3 class="main__headline-text">
+              Trending Movies
+            </h3>
+            <span  class="main__headline-arrow">&#x1F896;</span>
+          </div>
+
+          <div class="slider">
+            <div class="slider__container slider__container--movies">
+              <a href="#" class="slider__item" style="background-image: url('./images/movies/7.png');"></a>
+              <a href="#" class="slider__item" style="background-image: url('./images/movies/8.png');"></a>
+              <a href="#" class="slider__item" style="background-image: url('./images/movies/9.png');"></a>
+              <a href="#" class="slider__item" style="background-image: url('./images/movies/10.png');"></a>
+              <a href="#" class="slider__item" style="background-image: url('./images/movies/11.png');"></a>
+              <a href="#" class="slider__item" style="background-image: url('./images/movies/12.png');"></a>
+            </div>
+          </div>
+        </section>
+
+        <a href="#" class="trending__button button button-gradient">
+          <span>See more</span>
+        </a>
+      </div>
+
+      <div class="popular container">
+        <section class="popular__genres">
+          <div class="main__headline main__headline--trending">
+            <div class="main__headline-gradient"></div>
+            <h3 class="main__headline-text">
+              Popular Genres
+            </h3>
+            <span  class="main__headline-arrow">&#x1F896;</span>
+          </div>
+
+          <div class="slider">
+            <div class="slider__container">
+              <a href="#" class="slider__item" style="background: linear-gradient(109deg, #FD093F 2.4%, #F383F1 100%);">
+                <svg class="slider__svg">
+                  <use xlink:href="./images/sprite-icons.svg#romance"></use>
+                </svg>
+                <span class="slider__category">
+                  Romance
+                </span>
+              </a>
+
+              <a href="#" class="slider__item" style="background: linear-gradient(114deg, #0FFFDA 2.22%, #3CDB77 68.84%);">
+                <svg class="slider__svg">
+                  <use xlink:href="./images/sprite-icons.svg#drama"></use>
+                </svg>
+                <span class="slider__category">
+                  Drama
+                </span>
+              </a>
+
+              <a href="#" class="slider__item" style="background: linear-gradient(109deg, #B936FF 2.4%, #57DEDA 100%);">
+                <svg class="slider__svg">
+                  <use xlink:href="./images/sprite-icons.svg#historical"></use>
+                </svg>
+                <span class="slider__category">
+                  Historical
+                </span>
+              </a>
+
+              <a href="#" class="slider__item" style="background: linear-gradient(109deg, #FD093F 2.4%, #FB1378 2.41%, #FCCB1A 100%);">
+                <svg class="slider__svg">
+                  <use xlink:href="./images/sprite-icons.svg#action"></use>
+                </svg>
+                <span class="slider__category">
+                  Action
+                </span>
+              </a>
+
+              <a href="#" class="slider__item slider__item-scifi" style="background: linear-gradient(109deg, #FF6472 2.4%, #FDA75D 100%);">
+                <svg class="slider__svg slider__svg-scifi">
+                  <use xlink:href="./images/sprite-icons.svg#scifi"></use>
+                </svg>
+                <span class="slider__category slider__svg-scifi-text">
+                  Sci-fi
+                </span>
+              </a>
+
+              <a href="#" class="slider__item" style="background: linear-gradient(110deg, #13547A 2.37%, #80D0C7 96.77%);">
+                <svg class="slider__svg">
+                  <use xlink:href="./images/sprite-icons.svg#horror"></use>
+                </svg>
+                <span class="slider__category">
+                  Horror
+                </span>
+              </a>
+
+              <a href="#" class="slider__item" style="background: linear-gradient(110deg, #FFF77B 2.37%, #FFBF42 50%);">
+                <svg class="slider__svg">
+                  <use xlink:href="./images/sprite-icons.svg#comedy"></use>
+                </svg>
+                <span class="slider__category">
+                  Comedy
+                </span>
+              </a>
+
+              <a href="#" class="slider__item" style="background: linear-gradient(109deg, #1FA2FF 2.4%, #1FA2FF 2.41%, #1F535C 97.46%);">
+                <svg class="slider__svg">
+                  <use xlink:href="./images/sprite-icons.svg#documentary"></use>
+                </svg>
+                <span class="slider__category">
+                  Documentary
+                </span>
+              </a>
+
+              <div class="slider__item slider__item-fake">
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="popular__actors">
+          <div class="main__headline main__headline--trending">
+            <div class="main__headline-gradient"></div>
+            <h3 class="main__headline-text">
+              Popular Actors & Directors
+            </h3>
+            <span  class="main__headline-arrow">&#x1F896;</span>
+          </div>
+
+          <div class="slider">
+            <div class="slider__container">
+              <a href="#" class="slider__item">
+                <div class="slider__photo" style="background-image: url(./images/people/Sam.png);"></div>
+                <span class="slider__name">Samantha Bowen</span>
+              </a>
+              <a href="#" class="slider__item">
+                <div class="slider__photo" style="background-image: url(./images/people/Rhys.png);"></div>
+                <span class="slider__name">Rhys Birch</span>
+              </a>
+              <a href="#" class="slider__item">
+                <div class="slider__photo" style="background-image: url(./images/people/James.png);"></div>
+                <span class="slider__name">James Holloway</span>
+              </a>
+              <a href="#" class="slider__item">
+                <div class="slider__photo" style="background-image: url(./images/people/Joshua.png);"></div>
+                <span class="slider__name">Joshua Walton</span>
+              </a>
+              <a href="#" class="slider__item">
+                <div class="slider__photo" style="background-image: url(./images/people/Pat.png);"></div>
+                <spa class="slider__name">Patrick Elliott</spa>
+              </a>
+              <a href="#" class="slider__item">
+                <div class="slider__photo" style="background-image: url(./images/people/Morgan.png);"></div>
+                <span class="slider__name">Morgan O'Neill</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="section__openers">
+
       </section>
 
-      <a href="#" class="trending__button button button-gradient">
-        <span>See more</span>
-      </a>
-    </div>
+      <section class="section__register">
 
-    <section class="section__popular-genres">
+      </section>
+    </main>
 
-    </section>
-    
-    <section class="section__popular-actors">
-
-    </section>
-
-    <section class="section__openers">
-
-    </section>
-
-    <section class="section__register">
-
-    </section>
-  </main>
-
-  <footer class="footer">
-    
-  </footer>
+    <footer class="footer">
+      
+    </footer>
 
 
-</body>
+  </body>
 </html>
