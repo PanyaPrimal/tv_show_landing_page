@@ -1,8 +1,109 @@
 .main {
   color: #FFF;
+
+  &__headline {
+    @include flex-centred;
+    width: fit-content;
+    margin-bottom: 20px;
+
+    @include onDesktop {
+      margin-bottom: 40px;
+    }
+
+    &-gradient {
+      width: 6px;
+      height: 26px;
+      background: $brand-gradient;
+      border-radius: 20px;
+      margin-right: 8px;
+
+      @include onTablet {
+        width: 8px;
+        height: 35px;
+        margin-right: 11px;
+      }
+    }
+
+    &-text {
+      color: #FFF;
+      font-family: 'Mulish', serif;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 20px;
+      margin-right: 16px;
+
+      @include onTablet {}
+      @include onDesktop {}
+    }
+
+    &-arrow {
+      color: #FFF;
+      font-family: 'FontAwesome', serif;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+    }
+  }
+
+  .slider {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    height: 230px;
+
+    @include onTablet {
+      height: 270px;
+    }
+  
+    @include onDesktop {
+      height: 310px;
+    }
+
+    &__container {
+      display: flex;
+      gap: 12px;
+      transition: transform 0.3s;
+      width: 100%;
+
+      @include onTablet {
+        gap: 24px;
+      }
+    
+      @include onDesktop {
+        gap: 36px;
+      }
+    }
+
+    &__item {
+      width: calc(100% / 2);
+      min-width: calc(100% / 2);
+      max-width: calc(100% / 2);
+      border-radius: 20px;
+      background-size: cover;
+      background-position: center;
+
+      &:hover {
+        box-shadow: 0px 0px 12px -5px #26FFF2;
+      }
+
+      @include onTablet {
+        width: calc(100% / 4);
+        min-width: calc(100% / 4);
+        max-width: calc(100% / 4);
+      }
+
+      @include onDesktop {
+        min-width: 209px;
+        max-width: 209px;
+      }
+    }
+  }
 }
 
 .hero {
+  display: none;
   display: flex;
   position: relative;
   box-shadow: inset 100px 100px 100px 0px rgba(0, 0, 0, 0);
@@ -195,6 +296,22 @@
     @include onDesktop {
       left: -80px;
       min-width: 111%;
+    }
+  }
+}
+
+.trending {
+  padding: 30px 5px 50px 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  @include onDesktop {
+    padding: 60px 5px 100px 5px;
+    gap: 55px;
+
+    & > *:first-child {
+      margin-bottom: 5px;
     }
   }
 }
