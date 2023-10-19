@@ -29,6 +29,7 @@
       @include onTablet {
         margin: 15px 0px 15px 0px;
       }
+
       @include onDesktop {
         margin: 15px 0px 15px 0px;
       }
@@ -104,6 +105,7 @@
     &__link {
       @include flex-centred;
       padding: 2px 14px;
+      position: relative;
       flex-wrap: nowrap;
       text-align: center;
       font-family: 'Mulish', serif;
@@ -112,7 +114,6 @@
       font-weight: 700;
       line-height: 20px;
       opacity: 0.5;
-      position: relative;
   
       @include onTablet {
         padding: 25px 10px;
@@ -221,6 +222,5 @@
       }
     }
   }
-  
 }
 

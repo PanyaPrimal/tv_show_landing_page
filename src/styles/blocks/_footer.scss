@@ -16,14 +16,17 @@
     flex-direction: column;
     gap: 12px;
     padding: 10px 10px;
+
     @include onTablet {
       flex-direction: column;
     }
+
     @include onDesktop {
       flex-direction: row;
       gap: 84px;
       padding: 70px 165px;
     }
+
     &-container {
       display: flex;
       flex-direction: row;
@@ -41,6 +44,7 @@
 
   .logo {
     transition: transform 0.3s ease-in-out;
+    
     &:hover {
       transform: scale(1.05);
     }
@@ -54,8 +58,13 @@
     }
 
     &__item {
+      height: 40px;
 
+      @include onDesktop {
+        height: unset; 
+      }
     }
+    
     &__link {
       color: #C2C2C2;
       font-family: 'Mulish', serif;

@@ -3,11 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Zack Snyder's Justice League movie page">
   <title>Document</title>
+  <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+  <link rel="canonical" href=""/>
   <link rel="stylesheet" href="./styles/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lemon&family=Marcellus&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lemon&family=Marcellus&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
 </head>
   <body class="page">
     <header class="header container">
@@ -20,23 +23,42 @@
         </a>
     
         <ul class="nav__links">
-          <li class="nav__item" aria-label="Go to Home page">
-            <a class="nav__link nav__link-active" href="#">
+          <li class="nav__item">
+            <a 
+              class="nav__link nav__link-active" 
+              href="#" 
+              aria-label="Go to Home page"
+            >
               Home
             </a>
           </li>
-          <li class="nav__item" aria-label="Go to TV Shows page">
-            <a class="nav__link" href="#">
+
+          <li class="nav__item">
+            <a 
+              class="nav__link" 
+              href="#" 
+              aria-label="Go to TV Shows page"
+            >
               TV Shows
             </a>
           </li>
-          <li class="nav__item" aria-label="Go to TV Movies page">
-            <a class="nav__link" href="#">
+
+          <li class="nav__item">
+            <a 
+              class="nav__link" 
+              href="#" 
+              aria-label="Go to Movies page"
+            >
               Movies
             </a>
           </li>
-          <li class="nav__item" aria-label="Go to Series page">
-            <a class="nav__link" href="#">
+
+          <li class="nav__item">
+            <a 
+              class="nav__link" 
+              href="#"
+              aria-label="Go to Series page"
+            >
               Series
             </a>
           </li>
@@ -44,21 +66,33 @@
       
         <ul class="nav__actions actions">
           <li class="nav__action actions__search">
-            <a class="nav__action-link" aria-label="Search">
+            <a 
+              href="#" 
+              class="nav__action-link" 
+              aria-label="Search on site"
+            >
               <svg class="icon">
                   <use xlink:href="./images/sprite-icons.svg#search"></use>
               </svg>
             </a>
           </li>
           <li class="nav__action actions__notifications">
-            <a class="nav__action-link" aria-label="Go to notifications">
+            <a 
+              href="#" 
+              class="nav__action-link" 
+              aria-label="Go to notifications"
+            >
               <svg class="icon">
                 <use xlink:href="./images/sprite-icons.svg#notifications"></use>
               </svg>
             </a>
           </li>
           <li class="nav__action actions__add">
-            <a class="nav__action-link" aria-label="Add TV Show to profile">
+            <a 
+              href="#" 
+              class="nav__action-link" 
+              aria-label="Add TV Show to profile"
+            >
               <svg class="icon">
                 <use xlink:href="./images/sprite-icons.svg#add"></use>
               </svg>
@@ -90,19 +124,32 @@
             Determined to ensure Superman's ultimate sacrifice was not in vain, Bruce Wayne aligns forces with Diana Prince with plans to recruit a team of metahumans to protect the world from an approaching threat of catastrophic proportions.
           </summary>
           <div class="hero__buttons">
-            <a href="#" class="hero__button-watch button button-gradient">
+            <a 
+              href="#" 
+              class="hero__button-watch button button-gradient" 
+              aria-label="Watch this film"
+            >
               <svg class="icon">
                 <use xlink:href="./images/sprite-icons.svg#play"></use>
               </svg>
               <span>Watch</span>
             </a>
-            <a href="#" class="hero__button-more button">
+
+            <a 
+              href="#" 
+              class="hero__button-more button" 
+              aria-label="Go to More info page"
+            >
               More information
             </a>
           </div>
         </aside>
 
-        <aside class="hero__bg-poster" style="background-image: url('./images/poster1.avif');"></aside>
+        <aside 
+          class="hero__bg-poster" 
+          style="background-image: url('./images/poster1.avif');"
+        >
+        </aside>
 
         <div class="hero__underline"></div>
       </section>
@@ -119,36 +166,47 @@
 
           <div class="slider">
             <div class="slider__container slider__container--shows">
-              <a 
-                href="#" 
-                class="slider__item" 
+              <a
+                href="#"
+                class="slider__item"
+                aria-label="Go to Tv-Show-Name page"
                 style="background-image: url('./images/tv-shows/tv-show-1.avif');"
               ></a>
-              <a 
-                href="#" 
-                class="slider__item" 
+
+              <a
+                href="#"
+                class="slider__item"
+                aria-label="Go to Tv-Show-Name page"
                 style="background-image: url('./images/tv-shows/tv-show-2.avif');"
               ></a>
+
               <a 
-                href="#" 
-                class="slider__item" 
+                href="#"
+                class="slider__item"
+                aria-label="Go to Tv-Show-Name page"
                 style="background-image: url('./images/tv-shows/tv-show-3.avif');"
               ></a>
-              <a 
-                href="#" 
-                class="slider__item" 
+
+              <a
+                href="#"
+                class="slider__item"
+                aria-label="Go to Tv-Show-Name page"
                 style="background-image: url('./images/tv-shows/tv-show-4.avif');"
               ></a>
-              <a 
-                href="#" 
-                class="slider__item" 
+
+              <a
+                href="#"
+                class="slider__item"
                 style="background-image: url('./images/tv-shows/tv-show-5.avif');"
               ></a>
-              <a 
-                href="#" 
-                class="slider__item" 
+
+              <a
+                href="#"
+                class="slider__item"
+                aria-label="Go to Tv-Show-Name page"
                 style="background-image: url('./images/tv-shows/tv-show-6.avif');"
-              ></a>
+              >
+              </a>
             </div>
           </div>
         </section>
@@ -159,22 +217,61 @@
             <h3 class="main__headline-text">
               Trending Movies
             </h3>
-            <span  class="main__headline-arrow">&#x1F896;</span>
+            <span class="main__headline-arrow">&#x1F896;</span>
           </div>
 
           <div class="slider">
             <div class="slider__container slider__container--movies">
-              <a href="#" class="slider__item" style="background-image: url('./images/movies/movie-7.avif');"></a>
-              <a href="#" class="slider__item" style="background-image: url('./images/movies/movie-8.avif');"></a>
-              <a href="#" class="slider__item" style="background-image: url('./images/movies/movie-9.avif');"></a>
-              <a href="#" class="slider__item" style="background-image: url('./images/movies/movie-10.avif');"></a>
-              <a href="#" class="slider__item" style="background-image: url('./images/movies/movie-11.avif');"></a>
-              <a href="#" class="slider__item" style="background-image: url('./images/movies/movie-12.avif');"></a>
+              <a 
+                href="#"
+                class="slider__item"
+                aria-label="Go to Movie-Name page"
+                style="background-image: url('./images/movies/movie-7.avif');"
+              ></a>
+
+              <a 
+                href="#"
+                class="slider__item"
+                aria-label="Go to Movie-Name page"
+                style="background-image: url('./images/movies/movie-8.avif');"
+              ></a>
+
+              <a 
+                href="#"
+                class="slider__item"
+                aria-label="Go to Movie-Name page"
+                style="background-image: url('./images/movies/movie-9.avif');"
+              ></a>
+
+              <a 
+                href="#"
+                class="slider__item"
+                aria-label="Go to Movie-Name page"
+                style="background-image: url('./images/movies/movie-10.avif');"
+              ></a>
+
+              <a 
+                href="#"
+                class="slider__item"
+                aria-label="Go to Movie-Name page"
+                style="background-image: url('./images/movies/movie-11.avif');"
+              ></a>
+
+              <a 
+                href="#"
+                class="slider__item"
+                aria-label="Go to Movie-Name page"
+                style="background-image: url('./images/movies/movie-12.avif');"
+              ></a>
             </div>
           </div>
         </section>
 
-        <a href="#" class="trending__button button button-gradient">
+        <a 
+          href="#"
+          class="trending__button button button-gradient"
+          aria-label="Go to More page"
+        >
           <span>See more</span>
         </a>
       </div>
@@ -192,8 +289,9 @@
           <div class="slider">
             <div class="slider__container">
               <a 
-                href="#" 
-                class="slider__item" 
+                href="#"
+                class="slider__item"
+                aria-label="Go to Romance category page"
                 style="background: linear-gradient(109deg, #FD093F 2.4%, #F383F1 100%);"
               >
                 <svg class="slider__svg">
@@ -204,7 +302,12 @@
                 </span>
               </a>
 
-              <a href="#" class="slider__item" style="background: linear-gradient(114deg, #0FFFDA 2.22%, #3CDB77 68.84%);">
+              <a 
+                href="#"
+                class="slider__item"
+                aria-label="Go to Drama category page"
+                style="background: linear-gradient(114deg, #0FFFDA 2.22%, #3CDB77 68.84%);"
+              >
                 <svg class="slider__svg">
                   <use xlink:href="./images/sprite-icons.svg#drama"></use>
                 </svg>
@@ -213,7 +316,12 @@
                 </span>
               </a>
 
-              <a href="#" class="slider__item" style="background: linear-gradient(109deg, #B936FF 2.4%, #57DEDA 100%);">
+              <a 
+                href="#"
+                class="slider__item"
+                aria-label="Go to Historical category page"
+                style="background: linear-gradient(109deg, #B936FF 2.4%, #57DEDA 100%);"
+              >
                 <svg class="slider__svg">
                   <use xlink:href="./images/sprite-icons.svg#historical"></use>
                 </svg>
@@ -222,7 +330,12 @@
                 </span>
               </a>
 
-              <a href="#" class="slider__item" style="background: linear-gradient(109deg, #FD093F 2.4%, #FB1378 2.41%, #FCCB1A 100%);">
+              <a 
+                href="#"
+                class="slider__item"
+                aria-label="Go to Action category page"
+                style="background: linear-gradient(109deg, #FD093F 2.4%, #FB1378 2.41%, #FCCB1A 100%);"
+              >
                 <svg class="slider__svg">
                   <use xlink:href="./images/sprite-icons.svg#action"></use>
                 </svg>
@@ -231,7 +344,12 @@
                 </span>
               </a>
 
-              <a href="#" class="slider__item slider__item-scifi" style="background: linear-gradient(109deg, #FF6472 2.4%, #FDA75D 100%);">
+              <a 
+                href="#"
+                class="slider__item slider__item-scifi"
+                aria-label="Go to Sci-fi category page"
+                style="background: linear-gradient(109deg, #FF6472 2.4%, #FDA75D 100%);"
+              >
                 <svg class="slider__svg slider__svg-scifi">
                   <use xlink:href="./images/sprite-icons.svg#scifi"></use>
                 </svg>
@@ -240,7 +358,12 @@
                 </span>
               </a>
 
-              <a href="#" class="slider__item" style="background: linear-gradient(110deg, #13547A 2.37%, #80D0C7 96.77%);">
+              <a 
+                href="#"
+                class="slider__item"
+                aria-label="Go to Horror category page"
+                style="background: linear-gradient(110deg, #13547A 2.37%, #80D0C7 96.77%);"
+              >
                 <svg class="slider__svg">
                   <use xlink:href="./images/sprite-icons.svg#horror"></use>
                 </svg>
@@ -249,7 +372,12 @@
                 </span>
               </a>
 
-              <a href="#" class="slider__item" style="background: linear-gradient(110deg, #FFF77B 2.37%, #FFBF42 50%);">
+              <a 
+                href="#"
+                class="slider__item"
+                aria-label="Go to Comedy category page"
+                style="background: linear-gradient(110deg, #FFF77B 2.37%, #FFBF42 50%);"
+              >
                 <svg class="slider__svg">
                   <use xlink:href="./images/sprite-icons.svg#comedy"></use>
                 </svg>
@@ -258,7 +386,12 @@
                 </span>
               </a>
 
-              <a href="#" class="slider__item" style="background: linear-gradient(109deg, #1FA2FF 2.4%, #1FA2FF 2.41%, #1F535C 97.46%);">
+              <a 
+                href="#"
+                class="slider__item"
+                aria-label="Go to Documentary category page"
+                style="background: linear-gradient(109deg, #1FA2FF 2.4%, #1FA2FF 2.41%, #1F535C 97.46%);"
+              >
                 <svg class="slider__svg">
                   <use xlink:href="./images/sprite-icons.svg#documentary"></use>
                 </svg>
@@ -284,27 +417,56 @@
 
           <div class="slider">
             <div class="slider__container">
-              <a href="#" class="slider__item">
+              <a 
+                href="#"
+                class="slider__item"
+                aria-label="Go to Actor-name category page"
+              >
                 <div class="slider__photo" style="background-image: url(./images/people/Sam.avif);"></div>
                 <span class="slider__name">Samantha Bowen</span>
               </a>
-              <a href="#" class="slider__item">
+
+              <a 
+                href="#"
+                class="slider__item"
+                aria-label="Go to Actor-name category page"
+              >
                 <div class="slider__photo" style="background-image: url(./images/people/Rhys.avif);"></div>
                 <span class="slider__name">Rhys Birch</span>
               </a>
-              <a href="#" class="slider__item">
+
+              <a 
+                href="#"
+                class="slider__item"
+                aria-label="Go to Actor-name category page"
+              >
                 <div class="slider__photo" style="background-image: url(./images/people/James.avif);"></div>
                 <span class="slider__name">James Holloway</span>
               </a>
-              <a href="#" class="slider__item">
+
+              <a 
+                href="#"
+                class="slider__item"
+                aria-label="Go to Actor-name category page"
+              >
                 <div class="slider__photo" style="background-image: url(./images/people/Joshua.avif);"></div>
                 <span class="slider__name">Joshua Walton</span>
               </a>
-              <a href="#" class="slider__item">
+
+              <a 
+                href="#"
+                class="slider__item"
+                aria-label="Go to Actor-name category page"
+              >
                 <div class="slider__photo" style="background-image: url(./images/people/Pat.avif);"></div>
                 <spa class="slider__name">Patrick Elliott</spa>
               </a>
-              <a href="#" class="slider__item">
+              
+              <a 
+                href="#"
+                class="slider__item"
+                aria-label="Go to Actor-name category page"
+              >
                 <div class="slider__photo" style="background-image: url(./images/people/Morgan.avif);"></div>
                 <span class="slider__name">Morgan O'Neill</span>
               </a>
@@ -318,8 +480,8 @@
           href="#"
           class="openers__big-buck-bunny" 
           style="background-image: url('./images/OpenerBigBuckBunny.avif');"
-        >
-        </a>
+        ></a>
+
         <a 
           href="#"
           class="openers__coming-soon"
@@ -344,7 +506,11 @@
     <footer class="footer">
       
       <nav class="footer__navigation nav container">
-        <a class="logo" href="#" aria-label="logo">
+        <a 
+          class="logo" 
+          href="#" 
+          aria-label="logo"
+        >
           <svg width="157" height="70" viewBox="0 0 157 70" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="2" y="2" width="66" height="66" rx="12" stroke="url(#paint0_linear_1_416)" stroke-width="4"/>
             <path d="M47.5173 51.04C45.784 51.04 44.544 50.5467 43.7973 49.56C43.0507 48.5467 42.6773 47.0667 42.6773 45.12C42.6773 43.1733 43.304 38.6933 44.5573 31.68H43.9173C42.2907 33.8133 40.944 36.36 39.8773 39.32C38.8107 42.28 38.1573 44.9467 37.9173 47.32C36.6107 48.5467 35.104 49.16 33.3973 49.16C32.704 49.16 32.0907 48.92 31.5573 48.44C31.0507 47.9333 30.544 47.0667 30.0373 45.84C29.0507 43.36 28.344 38.64 27.9173 31.68H27.2773C25.9707 37.4133 25.3173 41.4533 25.3173 43.8C25.3173 46.1467 25.7173 47.96 26.5173 49.24C24.9173 50.44 23.2507 51.04 21.5173 51.04C19.784 51.04 18.544 50.5467 17.7973 49.56C17.0507 48.5467 16.6773 47.0533 16.6773 45.08C16.6773 43.08 17.5173 37.44 19.1973 28.16L17.0773 23.88C20.0907 21.9333 22.8373 20.96 25.3173 20.96C26.4107 20.96 27.3307 21.08 28.0773 21.32C28.8507 21.5333 29.584 21.96 30.2773 22.6C30.9973 23.24 31.584 24.1333 32.0373 25.28C33.0773 27.8667 33.824 31.64 34.2773 36.6H34.7573C36.144 32.52 38.064 29.0133 40.5173 26.08C41.8507 24.5067 43.4373 23.2667 45.2773 22.36C47.144 21.4533 49.1573 21 51.3173 21C53.3707 21 54.3973 22.24 54.3973 24.72C54.3973 25.5467 53.8773 28.6267 52.8373 33.96C51.824 39.2667 51.3173 42.4267 51.3173 43.44C51.3173 46.0267 51.7173 47.96 52.5173 49.24C50.9173 50.44 49.2507 51.04 47.5173 51.04Z" fill="white"/>
@@ -359,77 +525,138 @@
         </a>
         <section class="footer__navigation-container">
           <ul class="nav__links">
-            <li class="nav__item" aria-label="Go to Home page">
-              <a class="nav__link" href="#">
+            <li class="nav__item">
+              <a
+               class="nav__link"
+               href="#"
+               aria-label="Go to page"
+              >
                 Voice over and Subtitle
               </a>
             </li>
-            <li class="nav__item" aria-label="Go to TV Shows page">
-              <a class="nav__link" href="#">
+
+            <li class="nav__item">
+              <a
+               class="nav__link"
+               href="#"
+               aria-label="Go to page"
+              >
                 Media Center
               </a>
             </li>
-            <li class="nav__item" aria-label="Go to TV Movies page">
-              <a class="nav__link" href="#">
+
+            <li class="nav__item">
+              <a
+               class="nav__link"
+               href="#"
+               aria-label="Go to page"
+              >
                 Privacy
               </a>
             </li>
-            <li class="nav__item" aria-label="Go to Series page">
-              <a class="nav__link" href="#">
+
+            <li class="nav__item">
+              <a
+               class="nav__link"
+               href="#"
+               aria-label="Go to page"
+              >
                 Contact us
               </a>
             </li>
           </ul>
 
           <ul class="nav__links">
-            <li class="nav__item" aria-label="Go to Home page">
-              <a class="nav__link" href="#">
+            <li class="nav__item">
+              <a
+               class="nav__link"
+               href="#"
+               aria-label="Go to page"
+              >
                 Voice Description
               </a>
             </li>
-            <li class="nav__item" aria-label="Go to TV Shows page">
-              <a class="nav__link" href="#">
+
+            <li class="nav__item">
+              <a
+               class="nav__link"
+               href="#"
+               aria-label="Go to page"
+              >
                 Investor Relations
               </a>
             </li>
-            <li class="nav__item" aria-label="Go to TV Movies page">
-              <a class="nav__link" href="#">
+
+            <li class="nav__item">
+              <a
+               class="nav__link"
+               href="#"
+               aria-label="Go to page"
+              >
                 Legal Provisions
               </a>
             </li>
           </ul>
 
           <ul class="nav__links">
-            <li class="nav__item" aria-label="Go to Home page">
-              <a class="nav__link" href="#">
+            <li class="nav__item">
+              <a
+               class="nav__link"
+               href="#"
+               aria-label="Go to page"
+              >
                 Help Center Cookies
               </a>
             </li>
-            <li class="nav__item" aria-label="Go to TV Shows page">
-              <a class="nav__link" href="#">
+
+            <li class="nav__item">
+              <a
+               class="nav__link"
+               href="#"
+               aria-label="Go to page"
+              >
                 Job Opportunities
               </a>
             </li>
-            <li class="nav__item" aria-label="Go to TV Movies page">
-              <a class="nav__link" href="#">
+
+            <li class="nav__item">
+              <a
+               class="nav__link"
+               href="#"
+               aria-label="Go to page"
+              >
                 Preferences
               </a>
             </li>
           </ul>
 
           <ul class="nav__links">
-            <li class="nav__item" aria-label="Go to Home page">
-              <a class="nav__link nav__link-active" href="#">
+            <li class="nav__item">
+              <a
+               class="nav__link"
+               href="#"
+               aria-label="Go to page"
+              >
                 Gift Cards
               </a>
             </li>
-            <li class="nav__item" aria-label="Go to TV Shows page">
-              <a class="nav__link" href="#">
+
+            <li class="nav__item">
+              <a
+               class="nav__link"
+               href="#"
+               aria-label="Go to page"
+              >
                 Terms of Use
               </a>
             </li>
-            <li class="nav__item" aria-label="Go to TV Movies page">
-              <a class="nav__link" href="#">
+
+            <li class="nav__item">
+              <a
+               class="nav__link"
+               href="#"
+               aria-label="Go to page"
+              >
                 Corporate Informations
               </a>
             </li>
@@ -437,7 +664,5 @@
         </section>
       </nav>
     </footer>
-
-
   </body>
 </html>
