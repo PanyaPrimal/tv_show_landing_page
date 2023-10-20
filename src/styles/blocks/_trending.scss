@@ -1,21 +1,29 @@
 .trending {
-  padding: 30px 5px 30px 5px;
+  margin: 30px auto;
+  padding: 0 5px;
   display: flex;
   flex-direction: column;
   gap: 30px;
 
   @include onTablet {
-    padding: 30px 5px 50px 5px;
+    margin: 30px auto 50px;
   }
 
   @include onDesktop {
-    padding: 60px 5px 100px 5px;
+    margin: 60px auto 100px;
     gap: 55px;
 
     & > *:first-child {
       margin-bottom: 5px;
     }
   }
+
+  &__show,
+  &__movies {
+    padding: 0;
+    margin: 0;
+  }
+
   
   .slider {
     height: 230px;
@@ -30,6 +38,7 @@
   
     @include onDesktop {
       height: 310px;
+      overflow-x: visible;
     }
 
     &__container {

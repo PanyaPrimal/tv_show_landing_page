@@ -36,11 +36,13 @@ button {
 
 .container {
   margin: 0 auto;
+  padding: 0 10px;
   max-width: 360px;
 }
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
+    padding: unset;
   }
 }
 @media (min-width: 1440px) {
@@ -400,30 +402,42 @@ button {
   line-height: 20px;
 }
 
-.hero {
-  display: flex;
-  position: relative;
-  box-shadow: inset 100px 100px 100px 0prgba 0, 0, 0, 0;
-  z-index: 3;
+.hero-background-mobile-tablet {
   background-image: url("./../images/poster1.webp");
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
-}
-@media (min-width: 360px) {
-  .hero {
-    overflow: initial;
-  }
+  position: relative;
+  z-index: 1;
 }
 @media (min-width: 1440px) {
-  .hero {
-    background: #000000;
+  .hero-background-mobile-tablet {
     background: none;
   }
 }
+.hero-background-mobile-tablet:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.527);
+  z-index: -1;
+}
+@media (min-width: 1440px) {
+  .hero-background-mobile-tablet:before {
+    display: none;
+  }
+}
+
+.hero {
+  display: flex;
+  position: relative;
+}
 .hero__content {
   background-size: cover;
-  padding: 30px 5px 30px;
+  padding: 30px 10px 30px;
 }
 @media (min-width: 768px) {
   .hero__content {
@@ -558,17 +572,18 @@ button {
     opacity: 1;
   }
 }
-.hero__bg-poster {
+.hero__bg-desktop-poster {
   display: none;
 }
 @media (min-width: 1440px) {
-  .hero__bg-poster {
+  .hero__bg-desktop-poster {
     display: block;
     height: 100%;
     position: absolute;
     right: 0;
     min-width: 66%;
     left: 569px;
+    background-image: url("./../images/poster1.webp");
     background-size: contain;
     background-position: center 13%;
     background-repeat: no-repeat;
@@ -596,24 +611,29 @@ button {
 }
 
 .trending {
-  padding: 30px 5px 30px 5px;
+  margin: 30px auto;
+  padding: 0 5px;
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 @media (min-width: 768px) {
   .trending {
-    padding: 30px 5px 50px 5px;
+    margin: 30px auto 50px;
   }
 }
 @media (min-width: 1440px) {
   .trending {
-    padding: 60px 5px 100px 5px;
+    margin: 60px auto 100px;
     gap: 55px;
   }
   .trending > *:first-child {
     margin-bottom: 5px;
   }
+}
+.trending__show, .trending__movies {
+  padding: 0;
+  margin: 0;
 }
 .trending .slider {
   height: 230px;
@@ -630,6 +650,7 @@ button {
 @media (min-width: 1440px) {
   .trending .slider {
     height: 310px;
+    overflow-x: visible;
   }
 }
 .trending .slider__container {
@@ -1224,7 +1245,7 @@ button {
 }
 .slider__container--shows:nth-child(1) {
   animation: slide1 25s infinite;
-  animation-delay: 8s;
+  animation-delay: 10s;
 }
 @media (min-width: 768px) {
   .slider__container--shows:nth-child(1) {
@@ -1239,7 +1260,7 @@ button {
 
 .slider__container--movies:nth-child(1) {
   animation: slide1 15s infinite;
-  animation-delay: 8s;
+  animation-delay: 10s;
 }
 @media (min-width: 768px) {
   .slider__container--movies:nth-child(1) {
@@ -1254,7 +1275,7 @@ button {
 
 .slider__container--shows:nth-child(2) {
   animation: slide1 25s infinite;
-  animation-delay: 15s;
+  animation-delay: 6s;
 }
 @media (min-width: 768px) {
   .slider__container--shows:nth-child(2) {
@@ -1269,7 +1290,7 @@ button {
 
 .slider__container--movies:nth-child(2) {
   animation: slide1 15s infinite;
-  animation-delay: 15s;
+  animation-delay: 6s;
 }
 @media (min-width: 768px) {
   .slider__container--movies:nth-child(2) {
@@ -1284,7 +1305,7 @@ button {
 
 .slider__container--shows:nth-child(3) {
   animation: slide1 25s infinite;
-  animation-delay: 6s;
+  animation-delay: 15s;
 }
 @media (min-width: 768px) {
   .slider__container--shows:nth-child(3) {
@@ -1299,7 +1320,7 @@ button {
 
 .slider__container--movies:nth-child(3) {
   animation: slide1 15s infinite;
-  animation-delay: 6s;
+  animation-delay: 15s;
 }
 @media (min-width: 768px) {
   .slider__container--movies:nth-child(3) {
@@ -1314,7 +1335,7 @@ button {
 
 .slider__container--shows:nth-child(4) {
   animation: slide1 25s infinite;
-  animation-delay: 10s;
+  animation-delay: 11s;
 }
 @media (min-width: 768px) {
   .slider__container--shows:nth-child(4) {
@@ -1329,7 +1350,7 @@ button {
 
 .slider__container--movies:nth-child(4) {
   animation: slide1 15s infinite;
-  animation-delay: 10s;
+  animation-delay: 11s;
 }
 @media (min-width: 768px) {
   .slider__container--movies:nth-child(4) {
@@ -1344,7 +1365,7 @@ button {
 
 .slider__container--shows:nth-child(5) {
   animation: slide1 25s infinite;
-  animation-delay: 8s;
+  animation-delay: 6s;
 }
 @media (min-width: 768px) {
   .slider__container--shows:nth-child(5) {
@@ -1359,7 +1380,7 @@ button {
 
 .slider__container--movies:nth-child(5) {
   animation: slide1 15s infinite;
-  animation-delay: 8s;
+  animation-delay: 6s;
 }
 @media (min-width: 768px) {
   .slider__container--movies:nth-child(5) {
