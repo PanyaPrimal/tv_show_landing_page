@@ -403,8 +403,12 @@ button {
 .hero {
   display: flex;
   position: relative;
-  box-shadow: inset 100px 100px 100px 0px rgba(0, 0, 0, 0);
-  overflow: hidden;
+  box-shadow: inset 100px 100px 100px 0prgba 0, 0, 0, 0;
+  z-index: 3;
+  background-image: url("./../images/poster1.webp");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 @media (min-width: 360px) {
   .hero {
@@ -414,9 +418,11 @@ button {
 @media (min-width: 1440px) {
   .hero {
     background: #000000;
+    background: none;
   }
 }
 .hero__content {
+  background-size: cover;
   padding: 30px 5px 30px;
 }
 @media (min-width: 768px) {
@@ -1248,7 +1254,7 @@ button {
 
 .slider__container--shows:nth-child(2) {
   animation: slide1 25s infinite;
-  animation-delay: 9s;
+  animation-delay: 15s;
 }
 @media (min-width: 768px) {
   .slider__container--shows:nth-child(2) {
@@ -1263,7 +1269,7 @@ button {
 
 .slider__container--movies:nth-child(2) {
   animation: slide1 15s infinite;
-  animation-delay: 9s;
+  animation-delay: 15s;
 }
 @media (min-width: 768px) {
   .slider__container--movies:nth-child(2) {
@@ -1278,7 +1284,7 @@ button {
 
 .slider__container--shows:nth-child(3) {
   animation: slide1 25s infinite;
-  animation-delay: 7s;
+  animation-delay: 6s;
 }
 @media (min-width: 768px) {
   .slider__container--shows:nth-child(3) {
@@ -1293,7 +1299,7 @@ button {
 
 .slider__container--movies:nth-child(3) {
   animation: slide1 15s infinite;
-  animation-delay: 7s;
+  animation-delay: 6s;
 }
 @media (min-width: 768px) {
   .slider__container--movies:nth-child(3) {
@@ -1308,7 +1314,7 @@ button {
 
 .slider__container--shows:nth-child(4) {
   animation: slide1 25s infinite;
-  animation-delay: 13s;
+  animation-delay: 10s;
 }
 @media (min-width: 768px) {
   .slider__container--shows:nth-child(4) {
@@ -1323,7 +1329,7 @@ button {
 
 .slider__container--movies:nth-child(4) {
   animation: slide1 15s infinite;
-  animation-delay: 13s;
+  animation-delay: 10s;
 }
 @media (min-width: 768px) {
   .slider__container--movies:nth-child(4) {
@@ -1338,7 +1344,7 @@ button {
 
 .slider__container--shows:nth-child(5) {
   animation: slide1 25s infinite;
-  animation-delay: 14s;
+  animation-delay: 8s;
 }
 @media (min-width: 768px) {
   .slider__container--shows:nth-child(5) {
@@ -1353,7 +1359,7 @@ button {
 
 .slider__container--movies:nth-child(5) {
   animation: slide1 15s infinite;
-  animation-delay: 14s;
+  animation-delay: 8s;
 }
 @media (min-width: 768px) {
   .slider__container--movies:nth-child(5) {
@@ -1368,7 +1374,7 @@ button {
 
 .slider__container--shows:nth-child(6) {
   animation: slide1 25s infinite;
-  animation-delay: 13s;
+  animation-delay: 14s;
 }
 @media (min-width: 768px) {
   .slider__container--shows:nth-child(6) {
@@ -1383,7 +1389,7 @@ button {
 
 .slider__container--movies:nth-child(6) {
   animation: slide1 15s infinite;
-  animation-delay: 13s;
+  animation-delay: 14s;
 }
 @media (min-width: 768px) {
   .slider__container--movies:nth-child(6) {
