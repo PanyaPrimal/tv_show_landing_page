@@ -110,10 +110,9 @@ button {
 .header .nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
   width: 100%;
   flex-wrap: wrap;
-  gap: 5px;
 }
 @media (min-width: 768px) {
   .header .nav {
@@ -121,15 +120,12 @@ button {
     align-items: center;
     justify-content: inherit;
     gap: 10px;
+    flex-wrap: nowrap;
   }
 }
 @media (min-width: 1440px) {
   .header .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    gap: unset;
+    gap: 0;
   }
 }
 .header .nav .logo {
@@ -155,7 +151,7 @@ button {
 .header .nav .logo-m {
   width: 50px;
   height: 50px;
-  margin-right: 10px;
+  margin-right: 4px;
   position: relative;
   color: #FFF;
   background: #000;
@@ -204,29 +200,25 @@ button {
 .header .nav__links {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
+  justify-content: end;
+  width: 60%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 @media (min-width: 768px) {
   .header .nav__links {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
-  }
-}
-@media (min-width: 1440px) {
-  .header .nav__links {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    gap: 0px;
   }
 }
 .header .nav__link {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2px 14px;
   position: relative;
   flex-wrap: nowrap;
   text-align: center;
@@ -251,7 +243,7 @@ button {
   content: "";
   position: absolute;
   bottom: -6px;
-  width: 70%;
+  width: 100%;
   height: 2px;
   background: linear-gradient(317deg, #26FFF2 13.2%, #326CFF 71.54%);
   transform: scaleX(0);
@@ -283,7 +275,7 @@ button {
   content: "";
   position: absolute;
   bottom: 0;
-  width: 60%;
+  width: 100%;
   height: 2px;
   background: linear-gradient(317deg, #26FFF2 13.2%, #326CFF 71.54%);
   transform: scaleX(1);
@@ -304,10 +296,8 @@ button {
 }
 .header .nav__actions {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-  width: 76px;
+  flex-direction: row;
+  gap: 40px;
 }
 @media (min-width: 768px) {
   .header .nav__actions {
@@ -315,6 +305,7 @@ button {
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
+    gap: 0;
     width: auto;
   }
 }
@@ -337,7 +328,7 @@ button {
   opacity: 0.8;
 }
 .header .nav__action-link {
-  padding: 0px 30px;
+  padding: 10px 30px;
 }
 @media (min-width: 768px) {
   .header .nav__action-link {
@@ -346,7 +337,7 @@ button {
 }
 @media (min-width: 1440px) {
   .header .nav__action-link {
-    padding: 38px 26px;
+    padding: 38px 23px;
   }
 }
 .header .nav__action .icon {
@@ -1245,7 +1236,7 @@ button {
 }
 .slider__container--shows:nth-child(1) {
   animation: slide1 25s infinite;
-  animation-delay: 13s;
+  animation-delay: 12s;
 }
 @media (min-width: 768px) {
   .slider__container--shows:nth-child(1) {
@@ -1260,7 +1251,7 @@ button {
 
 .slider__container--movies:nth-child(1) {
   animation: slide1 15s infinite;
-  animation-delay: 13s;
+  animation-delay: 12s;
 }
 @media (min-width: 768px) {
   .slider__container--movies:nth-child(1) {
@@ -1305,7 +1296,7 @@ button {
 
 .slider__container--shows:nth-child(3) {
   animation: slide1 25s infinite;
-  animation-delay: 14s;
+  animation-delay: 15s;
 }
 @media (min-width: 768px) {
   .slider__container--shows:nth-child(3) {
@@ -1320,7 +1311,7 @@ button {
 
 .slider__container--movies:nth-child(3) {
   animation: slide1 15s infinite;
-  animation-delay: 14s;
+  animation-delay: 15s;
 }
 @media (min-width: 768px) {
   .slider__container--movies:nth-child(3) {
@@ -1335,7 +1326,7 @@ button {
 
 .slider__container--shows:nth-child(4) {
   animation: slide1 25s infinite;
-  animation-delay: 9s;
+  animation-delay: 11s;
 }
 @media (min-width: 768px) {
   .slider__container--shows:nth-child(4) {
@@ -1350,7 +1341,7 @@ button {
 
 .slider__container--movies:nth-child(4) {
   animation: slide1 15s infinite;
-  animation-delay: 9s;
+  animation-delay: 11s;
 }
 @media (min-width: 768px) {
   .slider__container--movies:nth-child(4) {
@@ -1365,7 +1356,7 @@ button {
 
 .slider__container--shows:nth-child(5) {
   animation: slide1 25s infinite;
-  animation-delay: 13s;
+  animation-delay: 11s;
 }
 @media (min-width: 768px) {
   .slider__container--shows:nth-child(5) {
@@ -1380,7 +1371,7 @@ button {
 
 .slider__container--movies:nth-child(5) {
   animation: slide1 15s infinite;
-  animation-delay: 13s;
+  animation-delay: 11s;
 }
 @media (min-width: 768px) {
   .slider__container--movies:nth-child(5) {
@@ -1395,7 +1386,7 @@ button {
 
 .slider__container--shows:nth-child(6) {
   animation: slide1 25s infinite;
-  animation-delay: 10s;
+  animation-delay: 12s;
 }
 @media (min-width: 768px) {
   .slider__container--shows:nth-child(6) {
@@ -1410,7 +1401,7 @@ button {
 
 .slider__container--movies:nth-child(6) {
   animation: slide1 15s infinite;
-  animation-delay: 10s;
+  animation-delay: 12s;
 }
 @media (min-width: 768px) {
   .slider__container--movies:nth-child(6) {
