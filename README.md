@@ -1,4 +1,4 @@
-This is responsive landing page DC League Of Justice build on HTML + SCSS + BEM according to designers mockup. It has 360px - 768px - 1440px media adaptation for different devices.
+This is responsive landing page DC League Of Justice build on HTML + SCSS + BEM according to designer's mockup. It has 360px - 768px - 1440px media adaptation for different devices.
 
 Installation and Setup:
 -download archive or clone rep. 
