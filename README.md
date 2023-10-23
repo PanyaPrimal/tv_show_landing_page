@@ -6,7 +6,7 @@ Installation and Setup:
 
 [Demo Link](https://panyaprimal.github.io/tv_show_landing_page/src/)
 
+[Pagespeed](https://github.com/PanyaPrimal/tv_show_landing_page/assets/58422219/58adf924-5b29-4d3e-8a11-64e4106a79fa)
 
-![PC](https://github.com/PanyaPrimal/tv_show_landing_page/assets/58422219/75707dde-ef20-44f7-a40a-ca923ed923f7)
-![Mobile](https://github.com/PanyaPrimal/tv_show_landing_page/assets/58422219/960cfa99-b52a-47c7-88e0-1a9dd69c1b4b)
+[PC](https://github.com/PanyaPrimal/tv_show_landing_page/assets/58422219/40eb64d9-0817-4e3e-b866-caa2ed5d20cd)
 
